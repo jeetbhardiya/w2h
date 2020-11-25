@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="signup1.js"></script>
+    <link rel="stylesheet" href="signup1.css">
+    <title>Signup</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+    </style>
+</head>
+<body>
+    <!-- <form target="_self"> -->
+        <div class="container">
+            <div class="logo" style="background-color: #CCEBB7; text-align: center; border-radius: 5px;">
+                <img src="w3h logo.svg" alt="W3H" height="200px">
+            </div>
+            <h2 style="text-align: center; font-size: 38px; font-family: 'Playfair Display', serif;">Sign Up</h2>
+            
+            <p>All fields are required.</p>
+            
+            <div class="inp" class="inp1">
+                <label for="name" class="lab">Full Name</label><br>
+                <input class="in" type="Name" name="name" id="name">
+                <span id="spname" class="span"></span>
+            </div>
+
+            <div class="inp" class="inp2">
+                <label class="lab" for="gender">Gender</label><br>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="trans">Transgender</option>
+                    <option value="na">Choose not to disclose</option>
+                </select>
+                <span id="spgender" class="span"></span>
+            </div>
+
+            <div class="inp" class="inp3">
+                <label class="lab" for="country">Country</label><br>
+                <input class="in" type="text" name="country" id="country">
+                <span id="spcountry" class="span"></span>
+            </div>
+
+            <div class="inp4">
+                <label for="num" class="lab">Phone</label><br>
+                <input id="num" class="inp" name="num" type="number">
+                <span id="numspan" class="span"></span>
+            </div>
+
+            <div class="inp5">
+                <label for="email" class="lab">Email ID</label><br>
+                <input id="email" class="inp" name="email" type="email">
+                <span id="emailspan" class="span"></span>
+            </div>
+
+            <div class="inp6">
+                <label for="pass" class="lab">Password</label><br>
+                <input id="pass" class="inp" name="pass" type="password">
+                <span id=passspan class="span"></span>
+            </div>
+            <div class="inp" class="inp7">
+                <label class="lab" for="cpass">Re-enter Password</label><br>
+                <input class="in" type="password" name="password" id="cpass">
+                <span id="spcpass" class="spann"></span>
+            </div>
+            <button type="submit" id="btn" onclick="validate()"><b>SUBMIT</b></button>
+        </div>
+    <!-- </form> -->
+    
+</body>
+</html>
